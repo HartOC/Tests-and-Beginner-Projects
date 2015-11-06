@@ -1,9 +1,11 @@
 def mean(set):
   sum(set)/len(set)
   
-def stdev(set):
+def variance(set):
   variance=0
   for value in set:
     variance+= (value-mean)**2
-  return sqrt(variance/(len(set))
+
+def stdev(set):
+   return sqrt(variance/len(set))
   
